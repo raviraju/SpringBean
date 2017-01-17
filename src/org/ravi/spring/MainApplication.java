@@ -24,6 +24,17 @@ public class MainApplication {
 		ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
 		Triangle t = (Triangle) context.getBean("triangle");
 		t.draw();
+		t.setType("Isoceles");
+		t.draw();
+		Triangle t1 = (Triangle) context.getBean("triangle");
+		t1.draw();
+		
+		Circle c = (Circle) context.getBean("circle");
+		c.draw();
+		c.setColor("red");
+		c.draw();
+		Circle c1 = (Circle) context.getBean("circle");
+		c1.draw();
 	}
 
 }
