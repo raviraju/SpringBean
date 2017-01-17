@@ -46,6 +46,13 @@ public class MainApplication {
 		FriendCircle fc = (FriendCircle) context.getBean("friendCircle");
 		fc.draw();
 		context.registerShutdownHook();
+		
+		System.out.println("*************************************************");
+		TextEditor te = (TextEditor) context.getBean("textEditor");
+		te.spellCheck();
+		
+		System.out.println("*************************************************");
+		ExampleBean eb = (ExampleBean) context.getBean("exampleBean");
 	}
 
 }

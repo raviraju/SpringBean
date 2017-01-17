@@ -18,5 +18,26 @@
    </bean>
    
    <bean class="org.ravi.spring.InitMainApp"/>
+   
+   <!-- Definition for textEditor bean -->
+   <bean id="textEditor" class="org.ravi.spring.TextEditor">
+      <constructor-arg ref="spellChecker"/>	<!-- Pass Object Reference -->
+   </bean>
 
+   <!-- Definition for spellChecker bean -->
+   <bean id="spellChecker" class="org.ravi.spring.SpellChecker">
+   </bean>
+   
+   <!-- Pass by Value using simple type -->
+   <bean id="exampleBean" class="org.ravi.spring.ExampleBean">
+      <constructor-arg type="int" value="2001"/>	
+      <constructor-arg type="java.lang.String" value="Zara"/>
+   </bean>
+
+   <!-- Pass by Value using index -->
+   <!-- <bean id="exampleBean" class="org.ravi.spring.ExampleBean">
+      <constructor-arg index=0 value="2001"/>
+      <constructor-arg index=1 value="Zara"/>
+   </bean>-->
+   
 </beans>
