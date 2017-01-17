@@ -14,4 +14,12 @@ public class Circle {
 	public void draw(){
 		System.out.println(color + " Circle drawn");
 	}
+	
+	public void init(){
+		System.out.println("Circle Bean is going through init.");
+	}
+	
+	public void destroy(){
+     	System.out.println("Circle Bean will destroy now.");
+	}
 }

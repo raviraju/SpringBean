@@ -11,4 +11,12 @@ public class Triangle {
 	public void draw(){
 		System.out.println(type + " Triangle drawn");
 	}
+
+	public void init(){
+		System.out.println("Triangle Bean is going through init.");
+	}
+	
+	public void destroy(){
+     	System.out.println("Triangle Bean will destroy now.");
+	}
 }
