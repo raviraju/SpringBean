@@ -12,5 +12,7 @@
    <bean id="circle" class="org.ravi.spring.Circle" scope="prototype" init-method="init" destroy-method="destroy">
        <property name="color" value="black"/>
    </bean>
+   
+   <bean class="org.ravi.spring.InitMainApp"/>
 
 </beans>
