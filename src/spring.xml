@@ -13,6 +13,10 @@
        <property name="color" value="black"/>
    </bean>
    
+   <bean id="friendCircle" class="org.ravi.spring.FriendCircle" parent="circle">
+       <property name="size" value="large"/>
+   </bean>
+   
    <bean class="org.ravi.spring.InitMainApp"/>
 
 </beans>

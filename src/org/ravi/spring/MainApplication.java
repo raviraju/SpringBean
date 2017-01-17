@@ -42,6 +42,9 @@ public class MainApplication {
 		Circle c1 = (Circle) context.getBean("circle");
 		c1.draw();
 		
+		System.out.println("*************************************************");
+		FriendCircle fc = (FriendCircle) context.getBean("friendCircle");
+		fc.draw();
 		context.registerShutdownHook();
 	}
 
