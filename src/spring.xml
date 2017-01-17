@@ -20,8 +20,14 @@
    <bean class="org.ravi.spring.InitMainApp"/>
    
    <!-- Definition for textEditor bean -->
+   <!-- Pass Object Reference : Constructor-Based DI -->
+   <!-- 
    <bean id="textEditor" class="org.ravi.spring.TextEditor">
-      <constructor-arg ref="spellChecker"/>	<!-- Pass Object Reference -->
+      <constructor-arg ref="spellChecker"/>	
+   </bean>-->
+   <!-- Pass Object Reference as Parameter : Setter-Based DI -->
+    <bean id="textEditor" class="org.ravi.spring.TextEditor">
+      <property name="spellChecker" ref="spellChecker"/>
    </bean>
 
    <!-- Definition for spellChecker bean -->
